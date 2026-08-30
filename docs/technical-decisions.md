@@ -4,8 +4,7 @@ This document records the key architectural decisions, design trade-offs, and te
 
 ---
 
-## ADR 001: Backend Framework — FastAPI vs Django / Flask
-
+## ADR 001: Backend Framework (FastAPI vs Django / Flask)
 ### Context & Problem Statement
 The XYVEX application server requires high-throughput asynchronous execution logging, strict input schema validation, automatic OpenAPI spec generation, and low response latency for interactive terminal sessions.
 
@@ -19,7 +18,7 @@ We selected **FastAPI** (running on Python 3.12 with Uvicorn and Pydantic v2).
 
 ---
 
-## ADR 002: Frontend Architecture — React 18 + Vite SPA vs Next.js SSR
+## ADR 002: Frontend Architecture (React 18 + Vite SPA vs Next.js SSR)
 
 ### Context & Problem Statement
 XYVEX is a desktop-grade security workspace requiring persistent client-side terminal state, rapid state mutations, offline-first command drafting, and instant tab transitions.
@@ -33,7 +32,7 @@ We selected a **Single-Page Application (SPA)** architecture using **React 18, T
 
 ---
 
-## ADR 003: Data Layer — PostgreSQL + Async SQLAlchemy 2.0 vs NoSQL (MongoDB)
+## ADR 003: Data Layer (PostgreSQL + Async SQLAlchemy 2.0 vs NoSQL MongoDB)
 
 ### Context & Problem Statement
 Security challenge data consists of interconnected hierarchical entities: Challenges, Hosts, Ports, Services, Commands, Attempts, Credentials, and Evidence.

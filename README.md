@@ -1,4 +1,4 @@
-# XYVEX — Public Engineering Case Study
+# XYVEX: Public Engineering Case Study
 
 > **XYVEX** is a cybersecurity workspace designed and engineered for CTFs, security labs, and hands-on learning. It structures commands, execution attempts, credentials, evidence, workflows, and writeups while solving a challenge, then turns useful discoveries into reusable knowledge for future challenges.
 >
@@ -161,7 +161,7 @@ xyvex-security-workspace/
 ## Recommended CV Entry Format
 
 ```text
-XYVEX — Founder & Lead Engineer
+XYVEX: Founder & Lead Engineer
 Stack: React 18, TypeScript, FastAPI, Python 3.12, PostgreSQL, Alembic, Docker, Playwright
 
 • Architected a full-stack cybersecurity workspace for structuring CTF reconnaissance, command execution logs, credentials, evidence, and writeups.
