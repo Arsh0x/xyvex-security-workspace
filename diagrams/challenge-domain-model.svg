@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 520" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="520" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Title -->
+  <text x="425" y="38" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#f8fafc" text-anchor="middle">XYVEX Domain Model Hierarchy</text>
+
+  <!-- Root Node: Challenge -->
+  <g transform="translate(325, 70)" filter="url(#shadow)">
+    <rect width="200" height="60" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="100" y="28" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="700" fill="#38bdf8" text-anchor="middle">CHALLENGE</text>
+    <text x="100" y="46" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Target IP • Platform • Notes</text>
+  </g>
+
+  <!-- Branch lines from Challenge -->
+  <!-- Line to Hosts -->
+  <path d="M 370 130 L 200 190" stroke="#64748b" stroke-width="2"/>
+  <!-- Line to Checklists -->
+  <path d="M 425 130 L 425 190" stroke="#64748b" stroke-width="2"/>
+  <!-- Line to Writeups -->
+  <path d="M 480 130 L 650 190" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Level 2 Node: Hosts -->
+  <g transform="translate(100, 190)" filter="url(#shadow)">
+    <rect width="200" height="55" rx="8" fill="#1e293b" stroke="#818cf8" stroke-width="2"/>
+    <text x="100" y="26" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#818cf8" text-anchor="middle">HOSTS</text>
+    <text x="100" y="42" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">IP Address • Hostname • OS</text>
+  </g>
+
+  <!-- Level 2 Node: Checklists -->
+  <g transform="translate(325, 190)" filter="url(#shadow)">
+    <rect width="200" height="55" rx="8" fill="#1e293b" stroke="#818cf8" stroke-width="2"/>
+    <text x="100" y="26" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#818cf8" text-anchor="middle">CHECKLISTS</text>
+    <text x="100" y="42" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Methodology • Task Tracking</text>
+  </g>
+
+  <!-- Level 2 Node: Writeups -->
+  <g transform="translate(550, 190)" filter="url(#shadow)">
+    <rect width="200" height="55" rx="8" fill="#1e293b" stroke="#818cf8" stroke-width="2"/>
+    <text x="100" y="26" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#818cf8" text-anchor="middle">WRITEUPS</text>
+    <text x="100" y="42" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Markdown • Secret Redaction</text>
+  </g>
+
+  <!-- Line Hosts -> Services -->
+  <path d="M 200 245 L 200 295" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Level 3 Node: Services -->
+  <g transform="translate(100, 295)" filter="url(#shadow)">
+    <rect width="200" height="55" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+    <text x="100" y="26" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#34d399" text-anchor="middle">SERVICES</text>
+    <text x="100" y="42" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Port • Protocol • Banner</text>
+  </g>
+
+  <!-- Branch lines from Services -->
+  <path d="M 150 350 L 100 400" stroke="#64748b" stroke-width="2"/>
+  <path d="M 250 350 L 300 400" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Level 4 Node: Commands -->
+  <g transform="translate(10, 400)" filter="url(#shadow)">
+    <rect width="180" height="55" rx="8" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+    <text x="90" y="26" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#fbbf24" text-anchor="middle">COMMANDS</text>
+    <text x="90" y="42" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">CLI String • Parameters</text>
+  </g>
+
+  <!-- Level 4 Node: Credentials -->
+  <g transform="translate(210, 400)" filter="url(#shadow)">
+    <rect width="180" height="55" rx="8" fill="#1e293b" stroke="#f43f5e" stroke-width="2"/>
+    <text x="90" y="26" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600" fill="#f43f5e" text-anchor="middle">CREDENTIALS</text>
+    <text x="90" y="42" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">AES-256 Encrypted Loot</text>
+  </g>
+
+  <!-- Line Commands -> Execution Attempts -->
+  <path d="M 100 455 L 100 480" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Level 5 Node: Attempts & Evidence -->
+  <g transform="translate(10, 480)">
+    <text x="90" y="15" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">↳ Execution Attempts &amp; Evidence Log</text>
+  </g>
+</svg>

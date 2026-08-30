@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 460" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="460" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Title -->
+  <text x="425" y="38" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" fill="#f8fafc" text-anchor="middle">XYVEX Knowledge Reuse Feedback Loop</text>
+
+  <!-- Node 1: Execute Command -->
+  <g transform="translate(60, 90)" filter="url(#shadow)">
+    <rect width="210" height="90" rx="8" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+    <text x="105" y="30" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#38bdf8" text-anchor="middle">1. Command Execution</text>
+    <text x="105" y="52" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Run attack commands on</text>
+    <text x="105" y="68" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Target A (10.10.11.35)</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M 270 135 L 320 135" stroke="#38bdf8" stroke-width="2"/>
+  <polygon points="320,130 328,135 320,140" fill="#38bdf8"/>
+
+  <!-- Node 2: Tag Success -->
+  <g transform="translate(330, 90)" filter="url(#shadow)">
+    <rect width="210" height="90" rx="8" fill="#1e293b" stroke="#818cf8" stroke-width="2"/>
+    <text x="105" y="30" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#818cf8" text-anchor="middle">2. Tag &amp; Promote</text>
+    <text x="105" y="52" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Mark attempt as "Successful"</text>
+    <text x="105" y="68" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Promote to Knowledge Library</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <path d="M 540 135 L 590 135" stroke="#818cf8" stroke-width="2"/>
+  <polygon points="590,130 598,135 590,140" fill="#818cf8"/>
+
+  <!-- Node 3: Parameterize -->
+  <g transform="translate(600, 90)" filter="url(#shadow)">
+    <rect width="190" height="90" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+    <text x="95" y="30" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#34d399" text-anchor="middle">3. Parameterize</text>
+    <text x="95" y="52" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Parse hardcoded IP/credentials</text>
+    <text x="95" y="68" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Replace with &lt;TARGET_IP&gt;</text>
+  </g>
+
+  <!-- Down Arrow from 3 to 4 -->
+  <path d="M 695 180 L 695 240" stroke="#34d399" stroke-width="2"/>
+  <polygon points="690,240 695,248 700,240" fill="#34d399"/>
+
+  <!-- Node 4: Global Library -->
+  <g transform="translate(580, 250)" filter="url(#shadow)">
+    <rect width="230" height="90" rx="8" fill="#1e293b" stroke="#f43f5e" stroke-width="2"/>
+    <text x="115" y="30" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#f43f5e" text-anchor="middle">4. Global Library Store</text>
+    <text x="115" y="52" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Indexed by Protocol, OS,</text>
+    <text x="115" y="68" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Port &amp; Usage Frequency</text>
+  </g>
+
+  <!-- Left Arrow 4 -> 5 -->
+  <path d="M 580 295 L 530 295" stroke="#f43f5e" stroke-width="2"/>
+  <polygon points="530,290 522,295 530,300" fill="#f43f5e"/>
+
+  <!-- Node 5: Contextual Engine -->
+  <g transform="translate(290, 250)" filter="url(#shadow)">
+    <rect width="230" height="90" rx="8" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/>
+    <text x="115" y="30" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#fbbf24" text-anchor="middle">5. Contextual Engine</text>
+    <text x="115" y="52" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Detects SMB on Target B</text>
+    <text x="115" y="68" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Surfaces SMB snippet</text>
+  </g>
+
+  <!-- Left Arrow 5 -> 6 -->
+  <path d="M 290 295 L 240 295" stroke="#fbbf24" stroke-width="2"/>
+  <polygon points="240,290 232,295 240,300" fill="#fbbf24"/>
+
+  <!-- Node 6: Instant Substitution -->
+  <g transform="translate(40, 250)" filter="url(#shadow)">
+    <rect width="200" height="90" rx="8" fill="#1e293b" stroke="#a855f7" stroke-width="2"/>
+    <text x="100" y="30" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#a855f7" text-anchor="middle">6. 1-Click Execution</text>
+    <text x="100" y="52" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Substitutes Target B IP</text>
+    <text x="100" y="68" font-family="Inter, system-ui, sans-serif" font-size="11" fill="#cbd5e1" text-anchor="middle">Executes immediately</text>
+  </g>
+
+  <!-- Feedback Curve back to Node 1 -->
+  <path d="M 140 250 C 140 200, 145 200, 150 188" stroke="#a855f7" stroke-width="2" stroke-dasharray="4 4"/>
+  <polygon points="145,188 150,180 155,188" fill="#a855f7"/>
+  <text x="180" y="215" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#cbd5e1">Feedback Loop ↺</text>
+</svg>
