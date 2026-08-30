@@ -129,7 +129,7 @@ The workspace provides an intuitive, high-density interface tailored for fast co
 ## Case Study Repository Structure
 
 ```text
-xyvex-engineering-case-study/
+xyvex-security-workspace/
 │
 ├── README.md                     # Case study overview & engineering highlights
 ├── LICENSE                       # Repository legal notice & terms of use
@@ -170,7 +170,7 @@ Stack: React 18, TypeScript, FastAPI, Python 3.12, PostgreSQL, Alembic, Docker, 
 • Designed a zero-downtime database migration system supporting legacy database schema adoption and Alembic versioning.
 • Formulated a production Docker stack with Nginx reverse proxy, automated E2E browser testing, and staging validation.
 
-Engineering Case Study: https://github.com/Arsh0x/xyvex-engineering-case-study
+Engineering Case Study: https://github.com/Arsh0x/xyvex-security-workspace
 ```
 
 ---
