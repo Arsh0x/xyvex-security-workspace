@@ -86,5 +86,5 @@
   <!-- Feedback Curve back to Node 1 -->
   <path d="M 140 250 C 140 200, 145 200, 150 188" stroke="#a855f7" stroke-width="2" stroke-dasharray="4 4"/>
   <polygon points="145,188 150,180 155,188" fill="#a855f7"/>
-  <text x="180" y="215" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#cbd5e1">Feedback Loop ↺</text>
+  <text x="180" y="215" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#cbd5e1">Feedback Loop (Continuous Cycle)</text>
 </svg>

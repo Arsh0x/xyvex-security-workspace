@@ -6,7 +6,7 @@
 
 ---
 
-## 🔄 Core Product Loop
+## Core Product Loop
 
 XYVEX transforms chaotic CTF notes and command-line interactions into structured, repeatable knowledge across security challenges:
 
@@ -30,7 +30,7 @@ Challenge B (e.g. Resolute / HTB)
 
 ---
 
-## 🏗️ Technical Architecture Overview
+## Technical Architecture Overview
 
 XYVEX is built as a highly responsive, multi-tenant web application engineered for speed, strict security boundaries, and reliable offline/online workflow tracking.
 
@@ -68,42 +68,42 @@ For full architectural details, component breakdown, and database schemas, see [
 
 ---
 
-## 📊 Verification Matrix & Test Evidence
+## Verification Matrix & Test Evidence
 
 Every release candidate undergoes multi-stage verification including automated backend regression testing, database migration validation, and Playwright end-to-end browser testing.
 
 | Area | Verification Method | Status | Target Benchmark |
 | :--- | :--- | :---: | :--- |
-| **Authentication & JWT** | Pytest unit & rotation tests | ✅ | Password hashing, token refresh & blacklisting verified |
-| **Email Verification** | Integration test + Resend API | ✅ | Verified link generation & state transition |
-| **Password Reset** | Expiration & single-use test | ✅ | Token single-use enforcement verified |
-| **Cross-User Isolation** | Ownership middleware tests | ✅ | Zero cross-tenant data leakage (404 enforcement) |
-| **Sensitive Data Encryption** | Fernet AES-256 field test | ✅ | Credentials & proofs encrypted at rest |
-| **Library Reuse Engine** | Parameter substitution engine | ✅ | Automated variable template generation |
-| **Writeup Redaction** | Regex & token secret scrubbing | ✅ | Credential masking prior to export verified |
-| **Browser E2E Workflow** | Playwright test suite | ✅ | Full CTF workflow execution passing |
-| **Schema Migrations** | Alembic upgrade/downgrade | ✅ | Atomic migrations & legacy SQLite adoption |
-| **Disaster Recovery** | Automated dump & restore | ✅ | Full data integrity post-restoration verified |
+| **Authentication & JWT** | Pytest unit & rotation tests | VERIFIED | Password hashing, token refresh & blacklisting verified |
+| **Email Verification** | Integration test + Resend API | VERIFIED | Verified link generation & state transition |
+| **Password Reset** | Expiration & single-use test | VERIFIED | Token single-use enforcement verified |
+| **Cross-User Isolation** | Ownership middleware tests | VERIFIED | Zero cross-tenant data leakage (404 enforcement) |
+| **Sensitive Data Encryption** | Fernet AES-256 field test | VERIFIED | Credentials & proofs encrypted at rest |
+| **Library Reuse Engine** | Parameter substitution engine | VERIFIED | Automated variable template generation |
+| **Writeup Redaction** | Regex & token secret scrubbing | VERIFIED | Credential masking prior to export verified |
+| **Browser E2E Workflow** | Playwright test suite | VERIFIED | Full CTF workflow execution passing |
+| **Schema Migrations** | Alembic upgrade/downgrade | VERIFIED | Atomic migrations & legacy SQLite adoption |
+| **Disaster Recovery** | Automated dump & restore | VERIFIED | Full data integrity post-restoration verified |
 
 ---
 
-## 🖼️ Application Screenshots & UI Showcase
+## Application Screenshots & UI Showcase
 
 The workspace provides an intuitive, high-density interface tailored for fast command tracking and knowledge extraction:
 
-- 📊 **[Overview / Dashboard](screenshots/overview.png)**: Active challenges, target hosts, platform metrics, and recent activity.
-- 📦 **[Boxes / Target Hub](screenshots/boxes.png)**: Host management, port scan ingestion, service inventory, and credential storage.
-- 💻 **[Workspace Terminal Engine](screenshots/workspace.png)**: Live command execution log, outcome tagging, and attempt timeline.
-- 📚 **[Knowledge Library](screenshots/library.png)**: Reusable command snippets, category filters, and parameterization engine.
-- 📝 **[Writeup Generator](screenshots/writeup.png)**: Markdown editor, evidence auto-linking, and sensitive data redaction filter.
-- ⚙️ **[Security & Settings](screenshots/settings.png)**: Token session management, encryption status, and account settings.
+- **[Overview / Dashboard](screenshots/overview.png)**: Active challenges, target hosts, platform metrics, and recent activity.
+- **[Boxes / Target Hub](screenshots/boxes.png)**: Host management, port scan ingestion, service inventory, and credential storage.
+- **[Workspace Terminal Engine](screenshots/workspace.png)**: Live command execution log, outcome tagging, and attempt timeline.
+- **[Knowledge Library](screenshots/library.png)**: Reusable command snippets, category filters, and parameterization engine.
+- **[Writeup Generator](screenshots/writeup.png)**: Markdown editor, evidence auto-linking, and sensitive data redaction filter.
+- **[Security & Settings](screenshots/settings.png)**: Token session management, encryption status, and account settings.
 
 > [!NOTE]
 > Detailed guidelines on screenshot sanitization and UI features are available in [screenshots/README.md](screenshots/README.md).
 
 ---
 
-## 🧠 Deep-Dive Engineering Challenges
+## Deep-Dive Engineering Challenges
 
 ### 1. Zero-Downtime Safe Database Adoption (`alembic` & `migration_bootstrap.py`)
 * **Problem**: Transitioning from early SQLite prototypes with populated data to production PostgreSQL schemas without data loss or downtime.
@@ -127,7 +127,7 @@ The workspace provides an intuitive, high-density interface tailored for fast co
 
 ---
 
-## 📁 Case Study Repository Structure
+## Case Study Repository Structure
 
 ```text
 xyvex-engineering-case-study/
@@ -160,7 +160,7 @@ xyvex-engineering-case-study/
 
 ---
 
-## 💼 Recommended CV Entry Format
+## Recommended CV Entry Format
 
 ```text
 XYVEX — Founder & Lead Engineer
@@ -177,6 +177,6 @@ Engineering Case Study: https://github.com/Arsh0x/xyvex-engineering-case-study
 
 ---
 
-## 📄 License & Notice
+## License & Notice
 
 This case study is published under the terms specified in [LICENSE](LICENSE). All proprietary rights to the production XYVEX product software and backend code remain reserved. See [NOTICE](NOTICE) for complete details.

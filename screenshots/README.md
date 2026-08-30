@@ -4,7 +4,7 @@ This directory contains sanitized screenshot captures demonstrating the user int
 
 ---
 
-## 🔒 Screenshot Sanitization Rules
+## Screenshot Sanitization Rules
 
 To ensure strict operational security and privacy when showcasing product screenshots publicly, all screenshots in this directory must strictly comply with the following sanitization criteria:
 
@@ -23,7 +23,7 @@ To ensure strict operational security and privacy when showcasing product screen
 
 ---
 
-## 📷 Screenshot Manifest & Descriptions
+## Screenshot Manifest & Descriptions
 
 | Filename | View / Component | Key Interface Features Demonstrated |
 | :--- | :--- | :--- |

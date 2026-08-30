@@ -98,7 +98,7 @@ When a user creates a new challenge or adds a new service (e.g. Port 445 on Targ
 3. The UI presents recommended commands in a 1-click execution drawer:
 
 ```text
-💡 Recommended Technique for Port 445 (SMB):
+[RECOMMENDED] Technique for Port 445 (SMB):
    [smbclient Null Session Enumeration]
    Command: smbclient -L //<TARGET_IP> -N
 
