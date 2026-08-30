@@ -91,12 +91,11 @@ Every release candidate undergoes multi-stage verification including automated b
 
 The workspace provides an intuitive, high-density interface tailored for fast command tracking and knowledge extraction:
 
-- **[Overview / Dashboard](screenshots/overview.png)**: Active challenges, target hosts, platform metrics, and recent activity.
-- **[Boxes / Target Hub](screenshots/boxes.png)**: Host management, port scan ingestion, service inventory, and credential storage.
-- **[Workspace Terminal Engine](screenshots/workspace.png)**: Live command execution log, outcome tagging, and attempt timeline.
-- **[Knowledge Library](screenshots/library.png)**: Reusable command snippets, category filters, and parameterization engine.
-- **[Writeup Generator](screenshots/writeup.png)**: Markdown editor, evidence auto-linking, and sensitive data redaction filter.
-- **[Security & Settings](screenshots/settings.png)**: Token session management, encryption status, and account settings.
+- **[Overview / Dashboard](screenshots/overview.png)**: Active target focus (`BoardLight`), box pipeline overview, Knowledge Library metrics (128 techniques / 342 commands), recent commands, and real-time activity feed.
+- **[Worklog & Service Hub](screenshots/boxes.png)**: Target phase tracking (`Service Enumeration`), interactive attack workflow pipeline diagram, discovered open services (`SSH`, `HTTP`, `SMB`, `WinRM`), worklog timeline, and quick capture drawer.
+- **[Reconnaissance & Scan Ingestion](screenshots/recon.png)**: Host information (`10.10.11.35`, `cicada.htb`), interactive CLI command runner, Nmap scan output ingestion log, open port list, discovered credentials, and saved scan artifacts.
+- **[Methodology & Progress Engine](screenshots/checklist.png)**: Phase-by-phase security checklist progress (35% Complete), rabbit hole detection alerts, missing step recommendations, and helpful enumeration tips.
+- **[Technique Library](screenshots/library.png)**: Reusable attack technique repository (SMB Share Enumeration, Kerberos, DNS Zone Transfer, AS-REP Roasting), category filters, OS compatibility badges, parameter templates, and target cross-references.
 
 > [!NOTE]
 > Detailed guidelines on screenshot sanitization and UI features are available in [screenshots/README.md](screenshots/README.md).
@@ -150,12 +149,11 @@ xyvex-engineering-case-study/
 │
 └── screenshots/                  # Sanitized interface visual showcase
     ├── README.md                 # Visual guide & sanitization criteria
-    ├── overview.png
-    ├── boxes.png
-    ├── workspace.png
-    ├── library.png
-    ├── writeup.png
-    └── settings.png
+    ├── overview.png              # Workspace dashboard & active focus
+    ├── boxes.png                 # Worklog & service enumeration hub
+    ├── recon.png                 # Reconnaissance & Nmap scan ingestion
+    ├── checklist.png             # Methodology & progress tracking engine
+    └── library.png               # Technique library & parameterization
 ```
 
 ---

@@ -6,7 +6,7 @@ This directory contains sanitized screenshot captures demonstrating the user int
 
 ## Screenshot Sanitization Rules
 
-To ensure strict operational security and privacy when showcasing product screenshots publicly, all screenshots in this directory must strictly comply with the following sanitization criteria:
+To ensure strict operational security and privacy when showcasing product screenshots publicly, all screenshots in this directory strictly comply with the following sanitization criteria:
 
 ### 1. Zero Sensitive Data Exposure
 - **Forbidden**: Real user email addresses, private production API keys (e.g. Resend keys), production JWT tokens, database passwords, or operational secrets.
@@ -14,12 +14,11 @@ To ensure strict operational security and privacy when showcasing product screen
 
 ### 2. Standardized Lab Targets
 - All screenshots use public, synthetic, or standard training lab targets:
-  - **Challenge Target**: `Cicada` (Hack The Box)
-  - **Target IP**: `10.10.11.35`
+  - **Challenge Targets**: `Cicada` (Hack The Box, IP: `10.10.11.35`), `BoardLight` (TryHackMe)
   - **Domain**: `cicada.htb` / `CORP.LOCAL`
 
 ### 3. Redacted Evidence & Flag Proofs
-- Real CTF root/user flag hashes and sensitive target credentials must be masked or replaced with synthetic demonstration hashes (`htb{s4n1t1z3d_c4s3_stUdy_fL4g!}`).
+- Real CTF root/user flag hashes and sensitive target credentials are replaced with synthetic demonstration hashes (`htb{s4n1t1z3d_c4s3_stUdy_fL4g!}`).
 
 ---
 
@@ -27,9 +26,8 @@ To ensure strict operational security and privacy when showcasing product screen
 
 | Filename | View / Component | Key Interface Features Demonstrated |
 | :--- | :--- | :--- |
-| `overview.png` | **Dashboard Overview** | Active target metrics, platform distribution charts, recent command attempt timeline, and quick-action challenge launcher. |
-| `boxes.png` | **Target Hub (Boxes)** | Host reconnaissance manager, open service port listing (Nmap parse ingestion), OS tag badges, and target credential inventory. |
-| `workspace.png` | **Terminal Workspace** | Real-time command execution log stream, outcome tagging (Success/Failure), execution timestamping, and output snippet viewer. |
-| `library.png` | **Knowledge Library** | Reusable command snippet repository, protocol category filters (SMB, HTTP, SSH, Kerberos), search bar, and parameter template preview. |
-| `writeup.png` | **Writeup Generator** | Split-pane Markdown editor, dynamic timeline evidence linking, and automated secret redaction filter toggle. |
-| `settings.png` | **Security & Account** | Active session token manager, database encryption status indicator, email verification state, and dark mode theme preferences. |
+| `overview.png` | **Workspace Dashboard** | Active target metrics (`BoardLight`, `Cicada`), box pipeline count, Knowledge Library stats (128 techniques / 342 commands), recent useful commands drawer, and workspace activity feed. |
+| `boxes.png` | **Worklog & Service Hub** | Box phase tracking (Service Enumeration), interactive attack workflow chart, discovered services table (`SSH:22`, `HTTP:80`, `SMB:445`, `WinRM:5985`), recent worklog timeline, quick capture note drawer, and host context. |
+| `recon.png` | **Reconnaissance & Scan Ingestion** | Target information sidebar (`10.10.11.35`, `cicada.htb`), interactive Nmap CLI command buffer, syntax-highlighted scan output log, open ports list, discovered credentials, and saved scan artifacts (`nmap.txt`, `gobuster.txt`). |
+| `checklist.png` | **Methodology & Progress Engine** | Multi-phase security methodology checklist (Reconnaissance 4/5, Exploitation 2/4, Privilege Escalation 1/4), progress donut chart (35% Complete), rabbit hole warning alerts, missing step suggestions, and helpful tips. |
+| `library.png` | **Technique Library & Parameterization** | Reusable offensive technique repository (SMB Share Enumeration, Kerberos User Enumeration, DNS Zone Transfer, AS-REP Roasting), category filters, difficulty tags, OS compatibility badges, reusable command drawer, common mistakes, and target box references. |
